@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block title %}
+    Qudus Adeyemi
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{%static "blog/index.css"%}" />
+    {% endblock %}
+
+
+{% block content %}
+    <section id="welcome">
+        <header>
+        <img src="{% static "blog/images/qudus.jpg"%}" alt="Qudus - The Author of this Blog" />
+        <h2> Qudus' Blog</h2>
+        </header>
+        <p> Hi, I am Qudus and I love to blog about Islam, tech, and the world!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2> My Latest Thoughts</h2>
+
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="{%static "blog/images/Quran.jpg" %}" alt="Self development from the Quran"/>
+                        <div class="post__content">
+                            <h3> Self Development in islam</h3>
+                            <p>
+                                bla bla bla bla bla
+
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    <section id="about">
+        <h2>What I do</h2>
+        <p> I love islam and I love spreading islamic knowledge</p>
+        <p> My goal is to keep growing</p>
+    </section>
+    
+
+        
+{% endblock %}
